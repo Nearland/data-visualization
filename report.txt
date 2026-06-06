@@ -1,0 +1,94 @@
+Размерность датасета: (2750, 9)
+----------------------------------------
+<class 'pandas.DataFrame'>
+Index: 2750 entries, 0 to 5497
+Data columns (total 9 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   order_status          2750 non-null   str    
+ 1   customer              2750 non-null   str    
+ 2   order_date            2750 non-null   str    
+ 3   order_quantity        2750 non-null   int64  
+ 4   sales                 2750 non-null   int64  
+ 5   discount              2750 non-null   float64
+ 6   discount_value        2750 non-null   int64  
+ 7   product_category      2750 non-null   str    
+ 8   product_sub_category  2750 non-null   str    
+dtypes: float64(1), int64(3), str(5)
+memory usage: 214.8 KB
+
+----------------------------------------
+Количество пропусков (NaN) по колонкам:
+order_status            0
+customer                0
+order_date              0
+order_quantity          0
+sales                   0
+discount                0
+discount_value          0
+product_category        0
+product_sub_category    0
+dtype: int64
+----------------------------------------
+Базовая статистика для числовых (счётных) колонок:
+Колонка		среднее		медиана		отклонение
+order_quantity		25.75		26.00		14.56
+sales		3403355.78		836230.00		7455887.41
+discount		0.05		0.05		0.03
+discount_value		170162.02		31294.50		423199.34
+----------------------------------------
+Статистика для категориальных колонок:
+
+order_status:
+order_status
+Order Finished     2455
+Order Returned      293
+Order Cancelled       2
+Name: count, dtype: int64
+--------------------
+
+customer:
+customer
+Maria Bertelson           17
+Bill Donatelli            16
+Christina Vanderzanden    12
+Lisa De Cherney           12
+Brad Thomas               12
+                          ..
+Frank Merwin               1
+Alice Mc Carthy            1
+Bruce Money                1
+Dorothy Dickinson          1
+Mary Zewe                  1
+Name: count, Length: 746, dtype: int64
+--------------------
+
+product_category:
+product_category
+Office Supplies    1542
+Technology          635
+Furniture           573
+Name: count, dtype: int64
+--------------------
+
+product_sub_category:
+product_sub_category
+Paper                           378
+Binders & Binder Accessories    364
+Computer Peripherals            299
+Office Furnishings              254
+Telephones & Communication      204
+Appliances                      193
+Pens & Art Supplies             178
+Chairs & Chairmats              154
+Storage & Organization          142
+Labels                          115
+Office Machines                 109
+Tables                           97
+Envelopes                        84
+Bookcases                        68
+Rubber Bands                     58
+Scissors, Rulers & Trimmers      30
+Copiers & Fax                    23
+Name: count, dtype: int64
+--------------------
